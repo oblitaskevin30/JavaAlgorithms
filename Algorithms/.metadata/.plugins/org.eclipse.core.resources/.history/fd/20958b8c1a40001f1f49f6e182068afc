@@ -1,0 +1,61 @@
+package reservaAsientoAnfiteatro;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("lista asientos anfiteatro");
+
+		
+		//		dibujamos los asientos 
+		
+		char asientos[][] = new char[10][10];
+		for (int i = 0; i<asientos.length;i++) {
+			System.out.print(i);
+			for (int j = 0 ; j<asientos.length;j++) {
+				asientos[i][j] = 'L';
+				System.out.print(j);
+				System.out.print("["+asientos[i][j]+"]");
+			}
+			System.out.println("");
+		}
+		
+		
+
+		
+
+		
+		// reservando asiento
+		boolean AsientoLibre = false;
+		System.out.println("INICIAMOS EL PROCESO DE RESERVA");
+		while(AsientoLibre!=true) {
+			//		Seleccionamos el asiento
+			
+			int fila;
+			int colum;
+			Scanner scan = new Scanner(System.in);
+			System.out.println("INGRESE LA FILA (0-9) Y LA COLUMNA(0-9)");
+			fila = scan.nextInt();
+			colum = scan.nextInt();
+			scan.close();
+			
+			//			verificamos si el asiento esta ocupado
+			if(asientos[fila][colum]=='L') {
+				asientos[fila][colum]='X';
+				System.out.println("asiento reservado correctamente : ");
+			} else {
+				System.out.println("el asiento "+ fila+colum + " esta ocupado");
+			}
+			
+			System.out.println("desea continuar reservando :  ingrese S para SI // N para NO");
+			String rpta = scan.next();
+			if(rpta.equalsIgnoreCase("S")) {
+				AsientoLibre = true;
+			}
+			
+			
+		}
+
+		
+	}
+}

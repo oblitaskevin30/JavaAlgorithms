@@ -1,0 +1,12 @@
+package ticketsAnfiteatro;
+
+import java.sql.Date;
+
+public class ticketEntity {
+	private int numero;
+	private int fila;
+	private int asiento;
+	private double precio;
+	private Date fechaCompra;
+	private Date fechaValidez;
+}

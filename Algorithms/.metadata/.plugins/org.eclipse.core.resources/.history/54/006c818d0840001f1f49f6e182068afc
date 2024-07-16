@@ -1,0 +1,34 @@
+package digitalCalaInterview;
+
+import java.util.Scanner;
+
+public class Cala {
+	
+	public Cala(){
+		
+	}
+	
+	public void esParImpar() {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("introduce el numero");
+		int num = scan.nextInt();
+		scan.close();
+		
+		if(num!=0) {
+			if(num%2==0) {
+				System.out.println("es par");
+			}
+			else {
+				System.out.println("es impar");
+			}
+		}else {
+			System.out.println("introduce un numero diferente de cero");
+		}
+		
+		
+	}
+	
+	
+
+}

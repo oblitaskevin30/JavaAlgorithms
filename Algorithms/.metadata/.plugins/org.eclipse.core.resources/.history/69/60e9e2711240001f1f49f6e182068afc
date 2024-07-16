@@ -1,0 +1,7 @@
+package reservaAsientoAnfiteatro;
+import reservaAsientoAnfiteatro.AsientosModel;
+
+public class AsientoRepositoryInterface {
+	
+	
+}

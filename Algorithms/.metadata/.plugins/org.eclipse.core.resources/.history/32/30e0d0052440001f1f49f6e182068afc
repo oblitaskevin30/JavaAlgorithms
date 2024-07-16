@@ -1,0 +1,7 @@
+package ticketsAnfiteatro;
+
+public class TicketsAnfiteatro {
+	public static void main(String[] args) {
+		
+	}
+}

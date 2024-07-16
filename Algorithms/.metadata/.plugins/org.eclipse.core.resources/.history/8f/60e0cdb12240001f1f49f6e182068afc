@@ -1,0 +1,36 @@
+package reservaAsientoAnfiteatro;
+
+public class AsientosModel {
+	private int numFilas ;
+	private int numColum;
+	
+	public AsientosModel(int numFilas, int numColum){
+		this.numColum = numColum;
+		this.numFilas = numFilas;
+	}
+	
+	public void setNumFilas(int numfilas) {
+		this.numFilas = numfilas;
+	}
+	
+	public int getFilas() {
+		return numFilas;
+	}
+	
+	public void setColum(int colum) {
+		this.numColum = colum;
+	}
+	
+	public int getColum() {
+		return numColum;
+				
+	}
+
+	@Override
+	public String toString() {
+		return "AsientosModel [numFilas=" + numFilas + ", numColum=" + numColum + "]";
+	}
+	
+	
+	
+}

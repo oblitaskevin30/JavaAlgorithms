@@ -1,0 +1,12 @@
+package ticketsAnfiteatro;
+
+import java.sql.Date;
+import java.util.ArrayList;
+import ticketsAnfiteatro.ticketEntity;
+
+public class TicketsAnfiteatro {
+	public static void main(String[] args) {
+		ArrayList<ticketEntity> ticketsList = new ArrayList<>();
+		ticketEntity ticket1 = new ticketEntity(1,0,1,10,new Date(),new Date());
+	}
+}

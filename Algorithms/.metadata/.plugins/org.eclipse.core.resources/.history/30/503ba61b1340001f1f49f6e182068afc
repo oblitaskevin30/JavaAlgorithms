@@ -1,0 +1,9 @@
+package reservaAsientoAnfiteatro;
+import java.util.ArrayList;
+
+import reservaAsientoAnfiteatro.AsientosModel;
+
+public class AsientoRepository {
+	ArrayList<AsientosModel> anfiteatro1 = new ArrayList<AsientosModel>();
+	
+}

@@ -1,0 +1,32 @@
+package digitalCalaInterview;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("odd or even program");
+		
+		FizzBuzz prueba = new FizzBuzz(15);
+		
+		prueba.fizzBuzz(15);
+		
+		
+	}
+	
+	public class FizzBuzz{
+		private int num;
+		public FizzBuzz(int numInstancia) {
+			this.num = numInstancia;
+		}
+		
+		public void fizzBuzz(int num) {
+			if(num != 0) {
+				if(num%15 ==0) {
+					System.out.println("Multiplo de 3 y 5 -- fizzbuzz");
+				}else if (num%3 ==0) {
+					System.out.println("Multiplo de 3 --- fizz" );
+				}else if (num%5==0) {
+					System.out.println("Multiplo de 5 --- buzz");
+				}
+			}
+		}
+	}
+}

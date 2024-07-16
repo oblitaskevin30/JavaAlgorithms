@@ -1,0 +1,9 @@
+package ticketsAnfiteatro;
+
+import java.util.ArrayList;
+
+public class TicketsAnfiteatro {
+	public static void main(String[] args) {
+		ArrayList<TicketsAnfiteatro> ticketsList = new ArrayList<>();
+	}
+}

@@ -1,0 +1,13 @@
+package digitalCalaInterview;
+import digitalCalaInterview.Cala;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("odd or even program");
+		
+		Cala prueba1 = new Cala();
+		prueba1.esParImpar();
+		
+	}
+
+}

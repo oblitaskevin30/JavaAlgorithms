@@ -1,0 +1,26 @@
+package ticketsAnfiteatro;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+import ticketsAnfiteatro.TicketEntity;
+
+public class TicketsAnfiteatro {
+	public static void main(String[] args) {
+		ArrayList<TicketEntity> ticketsList = new ArrayList<>();
+		TicketEntity ticket1 = new TicketEntity(1,0,1,10,new Date(),new Date());
+		TicketEntity ticket2 = new TicketEntity(1,0,2,10,new Date(),new Date());
+		TicketEntity ticket3 = new TicketEntity(1,5,5,100,new Date(),new Date());
+		
+		ticketsList.add(ticket3);
+		ticketsList.add(ticket2);
+		ticketsList.add(ticket1);
+		
+		for(TicketEntity ticket : ticketsList) {
+			System.out.println(ticket.toString());
+		}
+		
+		
+		
+	}
+}

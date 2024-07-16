@@ -1,0 +1,19 @@
+package digitalCalaInterview;
+
+public class ParImpar {
+	public ParImpar(){
+		
+	}
+	public void esParImpar(int num) {
+		if(num!=0) {
+			if(num%2==0) {
+				System.out.println("es par");
+			}
+			else {
+				System.out.println("es impar");
+			}
+		}else {
+			System.out.println("introduce un numero diferente de cero");
+		}
+	}
+}

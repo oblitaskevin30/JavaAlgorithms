@@ -1,0 +1,14 @@
+package singleton;
+
+public class Conexion {
+	private static Conexion instancia;
+	
+	private Conexion() {}
+	
+	public static Conexion getInstancia() {
+		
+		Conexion instancia =  new Conexion();
+		
+		return instancia;
+	}
+}

@@ -1,0 +1,30 @@
+package reservaAsientoAnfiteatro;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("lista asientos anfiteatro");
+		
+		char asientos[][] = new char[10][10];
+		for (int i = 0; i<asientos.length;i++) {
+			System.out.print(i);
+			for (int j = 0 ; j<asientos.length;j++) {
+				asientos[i][j] = 'L';
+				System.out.print(j);
+				System.out.print("["+asientos[i][j]+"]");
+			}
+			System.out.println("");
+		}
+		
+		int fila;
+		int colum;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		fila = scan.nextInt();
+		colum = scan.nextInt();
+
+		
+	}
+}

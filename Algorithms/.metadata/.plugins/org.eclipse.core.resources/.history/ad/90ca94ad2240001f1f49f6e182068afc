@@ -1,0 +1,10 @@
+package reservaAsientoAnfiteatro;
+import java.util.ArrayList;
+
+import reservaAsientoAnfiteatro.AsientosModel;
+
+public class AsientoRepository {
+	
+	
+	
+}
